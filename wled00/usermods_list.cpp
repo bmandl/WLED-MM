@@ -10,6 +10,7 @@
  * \/ \/ \/
  */
 //#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
+#include "../usermods/Animated_Staircase/Animated_Staircase.h"
 
 #ifdef USERMOD_BATTERY
 #include "../usermods/Battery/usermod_v2_Battery.h"
@@ -274,6 +275,7 @@ void registerUsermods()
 #ifdef USERMOD_ANIMATED_STAIRCASE
   usermods.add(new Animated_Staircase());
 #endif
+usermods.add(new Animated_Staircase());
 
 #ifdef USERMOD_MULTI_RELAY
   usermods.add(new MultiRelay());
